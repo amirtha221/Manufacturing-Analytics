@@ -1,75 +1,78 @@
-# Manufacturing Analytics & Predictive Maintenance
+# Manufacturing Analytics
 
-An end-to-end manufacturing analytics project combining **Power BI, DAX, Python and Machine Learning** to analyse manufacturing quality performance and identify potential machine-failure risks.
+An end-to-end manufacturing analytics project focused on **quality engineering, defect analysis, CAPA management, and predictive maintenance**, developed using **Power BI, DAX, Python, and Machine Learning**.
 
-The project demonstrates how manufacturing data can be transformed into actionable insights for **quality monitoring, defect analysis, CAPA tracking and predictive maintenance**.
+The project demonstrates how manufacturing data can be transformed into actionable insights to identify **where quality losses are occurring, why they are occurring, and which machines may require preventive attention**.
 
 ---
 
 ## Project Overview
 
-The project consists of two interconnected analytics components:
+The project is structured around two major analytical areas:
 
 ### 1. Manufacturing Quality Analytics
 
-A Power BI dashboard designed to provide visibility into manufacturing quality performance, including:
+A Power BI-based quality engineering dashboard designed to provide a structured view of manufacturing quality performance.
 
-- Overall Equipment Effectiveness (OEE)
-- First Pass Yield (FPY)
-- Defect analysis
-- Defect Pareto analysis
-- Root cause analysis
+The dashboard enables analysis of:
+
+- Quality KPIs
+- Rejected units
+- Defect trends
+- Top defects and Pareto analysis
+- Defect categorization
+- Root cause frequency
+- Section-level performance
+- Station-level performance
+- Shift-wise analysis
 - CAPA tracking
-- Rejection analysis
-- Station and section-level performance
-- Quality trends over time
+- CAPA closure performance
+- Quality loss analysis
+
+The objective is to move from:
+
+**"How many defects do we have?"**
+
+to:
+
+**"Where are the defects occurring, what are the major contributors, and where should the quality team act first?"**
+
+---
 
 ### 2. Predictive Maintenance
 
-A Python-based machine learning model developed to estimate the probability of machine failure using machine sensor parameters.
+A Python-based machine learning component was developed as an extension of the manufacturing analytics framework.
 
-The model output is integrated into Power BI to identify machines requiring further attention based on their predicted failure risk.
+The objective is to estimate the probability of machine failure using machine operating parameters such as:
 
----
+- Tool Wear
+- Torque
+- Process Temperature
+- Air Temperature
+- Rotational Speed
 
-# Predictive Maintenance
-
-## Objective
-
-The objective of the predictive maintenance component is to estimate machine-failure risk based on operating and process parameters.
-
-The model uses the following features:
-
-- Tool Wear (min)
-- Torque (Nm)
-- Process Temperature (K)
-- Air Temperature (K)
-- Rotational Speed (RPM)
-
-The target variable is:
-
-`Machine_Failure`
+The resulting failure probabilities are integrated into Power BI to provide a machine-level risk view and support preventive maintenance prioritization.
 
 ---
 
-## Machine Learning Workflow
+# Manufacturing Quality Analytics
+
+## Quality Engineering Dashboard
+
+The Power BI dashboard is designed around the typical quality investigation workflow:
 
 ```text
-Manufacturing Sensor Data
+Overall Quality Performance
           ↓
-Exploratory Data Analysis
+Identify Major Defects
           ↓
-Class Imbalance Analysis
+Pareto Analysis
           ↓
-Train / Test Split
+Identify Affected Section / Station
           ↓
-SMOTE on Training Data
+Investigate Root Causes
           ↓
-Random Forest Classifier
+Track CAPA
           ↓
-Failure Probability
-          ↓
-Risk Classification
-          ↓
-Power BI Dashboard
+Monitor Improvement
 
