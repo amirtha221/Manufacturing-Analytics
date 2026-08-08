@@ -31,3 +31,22 @@ The predictive maintenance page displays:
 - MTBF
 - Feature Importance
 - Machine-level risk information
+
+
+## Dashboard Preview
+
+### Overview
+
+![Overview Dashboard](Overview.png)
+
+### Defect Details
+
+![Defect Details](Defect_Details.png)
+
+### CAPA Tracker
+
+![CAPA Tracker](CAPA_Tracker.png)
+
+### Predictive Maintenance
+
+![Predictive Maintenance](Predictive_Maintenance.png)
