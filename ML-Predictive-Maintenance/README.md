@@ -25,6 +25,7 @@ Predict the probability of machine failure using:
 
 ### Machine Learning Workflow
 
+```text
 Raw Sensor Data
 ↓
 Exploratory Data Analysis
