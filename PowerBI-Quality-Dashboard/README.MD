@@ -5,19 +5,19 @@ This folder contains the Power BI dashboard developed for manufacturing quality 
 ## Dashboard Pages
 
 ### Overview
-
+![Overview Dashboard](Overview page.png)
 Provides a high-level view of manufacturing quality performance including First Pass Yield, OEE, CAPA performance and defect trends.
 
 ### Defect Details
-
+![Defect Details](Defect details page.png)
 Provides drill-down analysis of defects by section, station, defect description, root cause and shift.
 
 ### CAPA Tracker
-
+![CAPA Tracker](CAPA Tracker page.png)
 Provides visibility into corrective and preventive actions, including open/closed CAPAs and closure performance.
 
 ### Predictive Maintenance
-
+![Predictive Maintenance](Predictive maintenance page.png)
 Integrates machine-learning predictions into Power BI to identify machines with elevated failure probability.
 
 ## Machine Learning Integration
